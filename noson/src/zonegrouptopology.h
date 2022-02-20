@@ -60,7 +60,7 @@ namespace NSROOT
     Locked<ZonePlayerList>& GetZonePlayerList() { return m_zonePlayers; }
 
     // Implements EventSubscriber
-    virtual void HandleEventMessage(EventMessagePtr msg);
+    void HandleEventMessage(EventMessagePtr msg) override;
 
   private:
     SubscriptionPoolPtr m_subscriptionPool;
